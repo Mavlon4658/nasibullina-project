@@ -1,0 +1,171 @@
+.employee {
+    padding: 150px 0;
+
+    @include media(992) {
+        padding: 80px 0;
+    }
+
+    &-head {
+        display: flex;
+        flex-direction: column;
+        gap: 49px;
+        margin-bottom: 52px;
+
+        @include media(992) {
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .sec {
+            &-title {
+                max-width: 943px;
+            }
+
+            &-bigtitle {
+                margin: 0 0 0 auto;
+
+                @include media(992) {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    &-text {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+
+        @include media(992) {
+            gap: 30px;
+        }
+        
+        .sec-title {
+            text-align: right;
+            max-width: 900px;
+            margin: 0 0 0 auto;
+
+            @include media(992) {
+                max-width: 100%;
+                margin: 0;
+                text-align: left;
+            }
+        }
+    }
+
+    &-foot {
+        display: flex;
+        align-items: flex-end;
+        gap: 55px;
+        margin-top: 100px;
+
+        @include media(1150) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @include media(992) {
+            gap: 80px;
+            margin-top: 40px;
+        }
+
+        &__left {
+            width: 707px;
+            flex-shrink: 0;
+            padding-left: 152px;
+            position: relative;
+            z-index: 1;
+            
+            @include media(1250) {
+                width: 600px;
+            }
+
+            @include media(700) {
+                width: 100%;
+                padding-left: 89px;
+            }
+
+            .main-img {
+                width: 100%;
+                height: auto;
+                aspect-ratio: 1 / 1;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+
+            .small-img {
+                position: absolute;
+                bottom: 0;
+                right: 20px;
+                width: 150px;
+                height: auto;
+                aspect-ratio: 1 / 1;
+                border-radius: 50%;
+                object-fit: cover;
+
+                @include media(700) {
+                    width: 61px;
+                    right: 9px;
+                }
+            }
+
+            .icon {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background: #EAEAEA;
+                display: flex;
+
+                img {
+                    @include media(700) {
+                        width: 76px;
+                    }
+                }
+
+                span {
+                    position: absolute;
+                    left: 118px;
+                    bottom: 20px;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background: $color-txt-red;
+
+                    @include media(700) {
+                        bottom: 9px;
+                        left: 68px;
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+            }
+        }
+
+        &__right {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            @include media(992) {
+                gap: 30px;
+            }
+
+            h3 {
+                font-size: 20px;
+                line-height: 14px;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 140%;
+                margin: -5.5px 0;
+
+                @include media(992) {
+                    font-size: 14px;
+                    margin: -5px 0;
+                }
+            }
+        }
+    }
+}

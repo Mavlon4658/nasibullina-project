@@ -1,0 +1,128 @@
+.expertise {
+    padding: 150px 0;
+
+    @include media(992) {
+        padding: 80px 0;
+    }
+
+    &-head {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-right: 141px;
+        gap: 40px;
+        margin-bottom: 51px;
+
+        @include media(992) {
+            flex-direction: column;
+            margin-bottom: 25px;
+        }
+    }
+
+    &-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        max-width: 1316px;
+        margin: 0 0 101px 11px;
+        gap: 55px;
+
+        @include media(992) {
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 0 0 80px 0;
+            gap: 25px;
+        }
+    }
+    
+    &-list {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        @include media(992) {
+            gap: 40px;
+        }
+
+        &__item {
+            display: flex;
+            align-items: flex-start;
+            min-height: 86px;
+            padding-bottom: 30px;
+
+            @include media(992) {
+                padding-bottom: 20px;
+                min-height: inherit;
+            }
+
+            &:not(:last-child) {
+                border-bottom: 0.5px solid $color-txt-grey;
+            }
+
+            .number {
+                width: 229px;
+                flex-shrink: 0;
+                font-size: 20px;
+                line-height: 14px;
+                text-transform: uppercase;
+                color: $color-txt-grey;
+
+                @include media(1280) {
+                    width: 150px;
+                }
+
+                @include media(992) {
+                    width: 32px;
+                    font-size: 16px;
+                    line-height: 11px;
+                }
+            }
+
+            .text {
+                display: flex;
+                align-items: flex-start;
+
+                @include media(992) {
+                    flex-direction: column;
+                    gap: 20px;
+                }
+            }
+
+            h3 {
+                width: 345px;
+                flex-shrink: 0;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 14px;
+                text-transform: uppercase;
+                color: $color-txt-red;
+
+                @include media(992) {
+                    font-size: 14px;
+                    line-height: 10px;
+                    width: 100%;
+                    flex-shrink: inherit;
+                }
+
+                @include media(1280) {
+                    width: 280px;
+                }
+            }
+            
+            p {
+                width: 100%;
+                max-width: 553px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 140%;
+                margin: -5.5px 0;
+
+                @include media(992) {
+                    max-width: 100%;
+                    font-size: 14px;
+                    margin: -5px 0;
+                }
+            }
+        }
+    }
+}

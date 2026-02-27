@@ -1,0 +1,199 @@
+.client {
+    position: relative;
+    z-index: 1;
+
+    @include media(992) {
+        height: 926px;
+        overflow: hidden;
+    }
+
+    &-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    &-container {
+        padding: 150px 0;
+
+        @include media(992) {
+            padding: 50px 0;
+        }
+    }
+
+    &-head {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: 52px;
+        padding-left: 74px;
+
+        @include media(992) {
+            flex-direction: column-reverse;
+            gap: 40px;
+            margin: 0 0 25px;
+            padding: 0;
+        }
+    }
+
+    .sec {
+        &-subtitle {
+            color: $color-bg-white;
+        }
+
+        &-title {
+            max-width: 715px;
+            color: $color-bg-white;
+        }
+
+        &-bigtitle {
+            color: $color-bg-white;
+            padding-left: 218px;
+
+            @include media(992) {
+                padding-left: 0;
+            }
+        }
+    }
+
+    &-list {
+        margin-top: 200px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 33px;
+
+        @include media(992) {
+            margin-top: 143px;
+        }
+    }
+
+    &-card {
+        padding: 40px 30px;
+        width: 325px;
+        min-height: 290px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        backdrop-filter: blur(10px);
+        background: rgba(245, 245, 245, 0.15);
+        gap: 30px;
+
+        @include media(992) {
+            width: 250px;
+            min-height: 250px;
+            padding: 30px 20px;
+        }
+        
+        &:nth-child(2) {
+            margin: -82px 0 0 691px;
+
+            @include media(1200) {
+                margin-left: 500px;
+            }
+
+            @include media(992) {
+                margin: 40px 0 0 70px;
+            }
+        }
+
+        &:nth-child(3) {
+            margin: 54px 0 0 232px;
+
+            @include media(1200) {
+                margin-left: 100px;
+            }
+        }
+        
+        &:nth-child(4) {
+            margin: -177px 2px 0 auto;
+        }
+
+        &__head {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 40px;
+
+            @include media(992) {
+                gap: 20px;
+            }
+        }
+
+        h3 {
+            font-size: 40px;
+            line-height: 28px;
+            color: $color-txt-red;
+
+            @include media(992) {
+                font-size: 30px;
+                line-height: 21px;
+            }
+        }
+
+        h4 {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 140%;
+            text-transform: uppercase;
+            color: $color-bg-white;
+            margin: -7px 0;
+
+            @include media(992) {
+                font-size: 16px;
+                margin: -5.5px 0;
+            }
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            color: $color-bg-white;
+
+            @include media(992) {
+                font-size: 14px;
+                margin: -5px 0;
+            }
+        }
+    }
+
+    .more-link {
+        font-size: 20px;
+        line-height: 140%;
+        text-transform: uppercase;
+        color: $color-bg-white;
+        background: $color-txt-red;
+        width: 325px;
+        height: 290px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        position: relative;
+        z-index: 1;
+        margin: auto;
+
+        b {
+            font-family: $font-inter;
+            font-weight: 100;
+            font-size: 100px;
+            line-height: 56px;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            width: calc(100% - 40px);
+            height: calc(100% - 40px);
+            background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='white' stroke-width='0.5' stroke-dasharray='6' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+        }
+    }
+}
