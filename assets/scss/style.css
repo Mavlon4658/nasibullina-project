@@ -1985,6 +1985,8 @@ button, input, textarea, li, div {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  position: relative;
+  z-index: 1;
 }
 .footer-body__left {
   display: flex;
