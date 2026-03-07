@@ -16,6 +16,45 @@ if (phoneInp.length) {
     });
 }
 
+AOS.init();
+
+const counters = document.querySelectorAll('.counter');
+
+const startCounter = (counter) => {
+    const target = +counter.getAttribute('data-target');
+    let count = 0;
+
+    const update = () => {
+        const speed = target / 100;
+
+        count += speed;
+
+        if (count < target) {
+            counter.innerText = Math.floor(count);
+            requestAnimationFrame(update);
+        } else {
+            counter.innerText = target;
+        }
+    };
+
+    update();
+};
+
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            startCounter(entry.target);
+            observer.unobserve(entry.target);
+        }
+    });
+}, {
+    threshold: 0.6
+});
+
+counters.forEach(counter => {
+    observer.observe(counter);
+});
+
 const header = document.querySelector('header.header');
 
 if (scrollY > 80) {

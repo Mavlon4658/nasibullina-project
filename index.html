@@ -7,6 +7,8 @@
 
     <!-- Font css -->
     <link rel="stylesheet" href="./assets/fonts/Anticva/font.css">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Syle CSS -->
@@ -17,7 +19,7 @@
     <div class="wrapper">
 
         <!-- Header -->
-        <header class="header">
+        <header class="header" data-aos="fade-down" data-aos-delay="500">
             <div class="container header-container">
                 <a href="/" class="header-logo">a. Nasibullina</a>
                 <button class="header-bars">
@@ -98,18 +100,18 @@
                 <img src="./assets/images/home-bg.png" alt="" class="home-bg">
                 <div class="container home-container">
                     <div class="home-head">
-                        <h1>Эксперт</h1>
-                        <p>в области построения систем управления, развития бизнеса и антикризисного управления</p>
+                        <h1 data-aos="fade-right" data-aos-delay="800">Эксперт</h1>
+                        <p data-aos="fade-right" data-aos-delay="900">в области построения систем управления, развития бизнеса и антикризисного управления</p>
                     </div>
                     <div class="home-foot">
-                        <h2>АНАСТАСИЯ НАСИБУЛЛИНА</h2>
-                        <h3>«Бизнес-персона года»</h3>
-                        <p>Победитель «Национальной бизнес-премии» 2024</p>
-                        <img src="./assets/images/blazon-icon.svg" alt="">
+                        <h2 data-aos="fade-right" data-aos-delay="1000">АНАСТАСИЯ НАСИБУЛЛИНА</h2>
+                        <h3 data-aos="fade-right" data-aos-delay="1100">«Бизнес-персона года»</h3>
+                        <p data-aos="fade-right" data-aos-delay="1200">Победитель «Национальной бизнес-премии» 2024</p>
+                        <img src="./assets/images/blazon-icon.svg" alt="" data-aos="fade-up" data-aos-delay="1300">
                     </div>
-                    <img src="./assets/images/home-card.png" alt="" class="main-img">
-                    <img src="./assets/images/home-card-sm.png" alt="" class="main-img sm">
-                    <a href="#" class="contact-link">
+                    <img src="./assets/images/home-card.png" alt="" class="main-img" data-aos="fade-up" data-aos-delay="400">
+                    <img src="./assets/images/home-card-sm.png" alt="" class="main-img sm" data-aos="fade-up">
+                    <a href="#" class="contact-link" data-aos="zoom-in" data-aos-delay="800">
                         <span>Связаться</span>
                         <img src="./assets/images/call-icon.svg" alt="">
                     </a>
@@ -176,23 +178,25 @@
                     <ul class="about-foot">
                         <li class="about-foot__item">
                             <h3>
-                                <span>+</span>15
+                                <span>+</span><data class="counter" data-target="15">0</data>
                             </h3>
                             <p>лет управленческого опыта в российский и международных компаниях</p>
                         </li>
                         <li class="about-foot__item">
                             <h3>
-                                <span>></span>300
+                                <span>></span><data class="counter" data-target="300">0</data>
                             </h3>
                             <p>млн. единиц продукции в месяц пиковые объёмы производства</p>
                         </li>
                         <li class="about-foot__item">
-                            <h3>600</h3>
+                            <h3>
+                                <data class="counter" data-target="600">0</data>
+                            </h3>
                             <p>человек сотрудников совокупно по всем бизнесам</p>
                         </li>
                         <li class="about-foot__item">
                             <h3>
-                                35<span>%</span>
+                                <data class="counter" data-target="35">0</data><span>%</span>
                             </h3>
                             <p>рост производительности за счет внедренных управленческих решений и автоматизации</p>
                         </li>
@@ -691,6 +695,10 @@
 
     <!-- iMask JS -->
     <script src="./assets/js/iMask.js"></script>
+    <!-- CounterUp JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.6.2/countUp.umd.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- JS file -->
