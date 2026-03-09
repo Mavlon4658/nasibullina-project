@@ -16,7 +16,9 @@ if (phoneInp.length) {
     });
 }
 
-AOS.init();
+AOS.init({
+    offset: 0
+});
 
 const counters = document.querySelectorAll('.counter');
 
