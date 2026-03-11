@@ -1686,6 +1686,7 @@ button, input, textarea, li, div {
 .program-home {
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 .program-home__bg {
   position: absolute;
@@ -1857,25 +1858,32 @@ button, input, textarea, li, div {
 }
 @media screen and (max-width: 992px) {
   .program-home .main-img {
-    display: none;
     width: 342px;
     min-width: 342px;
     right: 50%;
     transform: translateX(calc(50% + 10px));
   }
 }
-.program-home .main-img.sm {
+.program-home .main-img img {
+  width: 100%;
+}
+@media screen and (max-width: 992px) {
+  .program-home .main-img img {
+    display: none;
+  }
+}
+.program-home .main-img img.sm {
   display: none;
 }
 @media screen and (max-width: 992px) {
-  .program-home .main-img.sm {
+  .program-home .main-img img.sm {
     display: block;
   }
 }
 .program-home .contact-link {
-  position: absolute;
-  right: 0;
-  bottom: 70px;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
   border-radius: 50%;
   padding: 25px 15px 0px;
   width: 150px;

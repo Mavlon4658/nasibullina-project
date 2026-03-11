@@ -118,7 +118,6 @@ const offerFraction = document.querySelector('.offer-foot__text');
 
 if (offerList.length) {
     const activeSlide = (idx) => {
-        console.log(count);
         offerList.forEach((item, itemIdx) => {
             if (itemIdx == idx) {
                 item.classList.add('active');

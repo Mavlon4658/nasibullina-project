@@ -7,6 +7,8 @@
 
     <!-- Font css -->
     <link rel="stylesheet" href="./assets/fonts/Anticva/font.css">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Syle CSS -->
@@ -17,7 +19,7 @@
     <div class="wrapper">
 
         <!-- Header -->
-        <header class="header">
+        <header class="header" data-aos="fade-down" data-aos-delay="250">
             <div class="container header-container">
                 <a href="/" class="header-logo">a. Nasibullina</a>
                 <button class="header-bars">
@@ -97,22 +99,24 @@
             <section class="program-home">
                 <img src="./assets/images/program-home-bg.png" alt="" class="program-home__bg">
                 <div class="container program-home__container">
-                    <div class="program-home__title">
+                    <div class="program-home__title" data-aos="fade-right" data-aos-delay="300">
                         <span>Исполнительный директор</span>
                         <span>на аутсорсе</span>
                     </div>
                     <div class="program-home__content">
-                        <h3>Почему я?</h3>
-                        <p>Своей деятельностью  я помогаю управленцам и собственникам компаний производственной сферы в ликвидации предпринимательской безграмотности по вопросам развития управленческих компетенций, финансовой грамотности, управления персоналом, делегирования, стоимости ресурсов на рынке, найма сотрудников, продаж и маркетинга. Продвигаю идею о важности развития предпринимательских навыков у детей со школьной скамьи для роста производственного сектора и экономики России, благополучия ее граждан.</p>
-                        <a href="#">
+                        <h3 data-aos="fade-right" data-aos-delay="350">Почему я?</h3>
+                        <p data-aos="fade-right" data-aos-delay="400">Своей деятельностью  я помогаю управленцам и собственникам компаний производственной сферы в ликвидации предпринимательской безграмотности по вопросам развития управленческих компетенций, финансовой грамотности, управления персоналом, делегирования, стоимости ресурсов на рынке, найма сотрудников, продаж и маркетинга. Продвигаю идею о важности развития предпринимательских навыков у детей со школьной скамьи для роста производственного сектора и экономики России, благополучия ее граждан.</p>
+                        <a href="#" data-aos="fade-right" data-aos-delay="450">
                             <span>Подробнее обо мне</span>
                             <b>+</b>
                         </a>
                     </div>
-                    <div class="logo-text">А. НАСИБУЛЛИНА</div>
-                    <img src="./assets/images/home-card.png" alt="" class="main-img">
-                    <img src="./assets/images/home-card-sm.png" alt="" class="main-img sm">
-                    <a href="#" class="contact-link">
+                    <div class="logo-text" data-aos="fade-left" data-aos-delay="300">А. НАСИБУЛЛИНА</div>
+                    <div class="main-img">
+                        <img src="./assets/images/home-card.png" alt="" data-aos="fade-up" data-aos-delay="200">
+                        <img src="./assets/images/home-card-sm.png" alt="" class="sm" data-aos="fade-up" data-aos-delay="200">
+                    </div>
+                    <a href="#" class="contact-link" data-aos="zoom-in" data-aos-delay="300">
                         <span>Связаться</span>
                         <img src="./assets/images/call-icon.svg" alt="">
                     </a>
@@ -125,11 +129,11 @@
                 <div class="container expertise-container">
                     <div class="expertise-head">
                         <div class="sec-subtitle">Экспертность</div>
-                        <div class="sec-title">Что я могу сделать как</div>
+                        <div class="sec-title" data-aos="fade-up" data-aos-delay="200">Что я могу сделать как</div>
                     </div>
                     <div class="expertise-text">
-                        <h2 class="sec-bigtitle">исполнительный директор</h2>
-                        <div class="sec-title">на аутсорсе?</div>
+                        <h2 class="sec-bigtitle" data-aos="fade-up" data-aos-delay="200">исполнительный директор</h2>
+                        <div class="sec-title" data-aos="fade-up" data-aos-delay="200">на аутсорсе?</div>
                     </div>
                     <ul class="expertise-list">
                         <li class="expertise-list__item">
@@ -198,10 +202,10 @@
                 <img src="./assets/images/client-bg.png" alt="" class="client-bg">
                 <div class="container client-container">
                     <div class="client-head">
-                        <div class="sec-title">Мои клиенты - это люди, которые хотят</div>
+                        <div class="sec-title" data-aos="fade-up" data-aos-delay="200">Мои клиенты - это люди, которые хотят</div>
                         <div class="sec-subtitle">Клиенты</div>
                     </div>
-                    <div class="sec-bigtitle">расти и развиваться</div>
+                    <div class="sec-bigtitle" data-aos="fade-up" data-aos-delay="200">расти и развиваться</div>
                     <ul class="client-list">
                         <li class="client-card">
                             <div class="client-card__head">
@@ -245,9 +249,9 @@
                 <div class="container achievement-container">
                     <div class="achievement-head">
                         <div class="sec-subtitle">Достижения</div>
-                        <div class="sec-title">15 лет управленческого опыта <span>в 6-ти</span> странах мира</div>
+                        <div class="sec-title" data-aos="fade-up" data-aos-delay="200">15 лет управленческого опыта <span>в 6-ти</span> странах мира</div>
                     </div>
-                    <h2 class="sec-bigtitle">+10 млрд руб выручки</h2>
+                    <h2 class="sec-bigtitle" data-aos="fade-up" data-aos-delay="200">+10 млрд руб выручки</h2>
                     <ul class="achievement-about">
                         <li>Признанный эксперт в области построения систем управления, развития бизнеса и антикризисного менеджмента. За <b>15‑летний управленческий стаж</b> реализовала масштабные проекты в <b>6-ти странах мира,</b> продемонстрировав способность адаптировать бизнес‑модели к разным рыночным условиям и культурным особенностям.</li>
                         <li>Профессиональный путь  отмечен значительными результатами: совокупная выручка управляемых ею бизнесов превысила <b>10 млрд рублей,</b> а общая численность персонала достигла <b>600 человек.</b> В сферу её компетенции входит управление 9  независимыми бизнесами и <b>9  операционными системами</b>, охватывающими <b>7  разнообразных ниш:</b></li>
@@ -332,12 +336,12 @@
             <section class="solution">
                 <div class="container solution-container">
                     <div class="solution-head">
-                        <div class="sec-title">Исполнительный директор в аренду</div>
+                        <div class="sec-title" data-aos="fade-up" data-aos-delay="200">Исполнительный директор в аренду</div>
                         <div class="sec-subtitle">РЕШЕНИЯ</div>
                     </div>
                     <div class="solution-text">
-                        <h2 class="sec-bigtitle">РЕШИТ</h2>
-                        <div class="sec-title">ваши боли</div>
+                        <h2 class="sec-bigtitle" data-aos="fade-up" data-aos-delay="200">РЕШИТ</h2>
+                        <div class="sec-title" data-aos="fade-up" data-aos-delay="200">ваши боли</div>
                     </div>
                     <div class="solution-list">
                         <div class="solution-card">
@@ -372,12 +376,12 @@
             <section class="employee">
                 <div class="container employee-container">
                     <div class="employee-head">
-                        <div class="sec-title">Я стану не только ментором и коучем, я стану</div>
-                        <div class="sec-bigtitle">РЕАЛЬНЫМ СОТРУДНИКОМ</div>
+                        <div class="sec-title" data-aos="fade-up" data-aos-delay="200">Я стану не только ментором и коучем, я стану</div>
+                        <div class="sec-bigtitle" data-aos="fade-up" data-aos-delay="200">РЕАЛЬНЫМ СОТРУДНИКОМ</div>
                     </div>
                     <div class="employee-text">
-                        <div class="sec-title">который возьмёт на себя часть задач и</div>
-                        <div class="sec-bigtitle">ВАШЕЙ ГОЛОВНОЙ БОЛИ</div>
+                        <div class="sec-title" data-aos="fade-up" data-aos-delay="200">который возьмёт на себя часть задач и</div>
+                        <div class="sec-bigtitle" data-aos="fade-up" data-aos-delay="200">ВАШЕЙ ГОЛОВНОЙ БОЛИ</div>
                     </div>
                     <div class="employee-foot">
                         <div class="employee-foot__left">
@@ -404,8 +408,8 @@
                 <div class="container offer-container">
                     <div class="offer-head">
                         <div class="sec-subtitle">Предложение</div>
-                        <div class="sec-title">Формат нашего</div>
-                        <h2 class="sec-bigtitle">Сотрудничества</h2>
+                        <div class="sec-title" data-aos="fade-up" data-aos-delay="200">Формат нашего</div>
+                        <h2 class="sec-bigtitle" data-aos="fade-up" data-aos-delay="200">Сотрудничества</h2>
                     </div>
                 </div>
                 <ul class="offer-list">
@@ -450,10 +454,10 @@
                 <img src="./assets/images/special-bg.png" alt="" class="special-bg">
                 <div class="container special-container">
                     <div class="special-head">
-                        <h2 class="sec-bigtitle">special offer</h2>
+                        <h2 class="sec-bigtitle" data-aos="fade-up" data-aos-delay="200">special offer</h2>
                         <div class="sec-subtitle">special</div>
                     </div>
-                    <div class="title">
+                    <div class="title" data-aos="fade-up" data-aos-delay="200">
                         <span>+</span>2<small>ч</small>
                     </div>
                     <div class="special-content">
@@ -541,6 +545,10 @@
 
     <!-- iMask JS -->
     <script src="./assets/js/iMask.js"></script>
+    <!-- CounterUp JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.6.2/countUp.umd.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- JS file -->
